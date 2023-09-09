@@ -1,0 +1,43 @@
+a { cursor: pointer; text-decoration: none; color: black; }
+ul { list-style-type: none; margin: 0px; padding: 0px; }
+img { max-width: 100%; height: auto; }
+textarea { resize: none; }
+// input { -webkit-appearance: none; -moz-appearance: none; box-shadow: none; outline: none; }
+input[type=number] { -moz-appearance:textfield; }
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+*:focus, select { outline: none!important; }
+.text-justify { text-align: justify; }
+.uppercase { text-transform: uppercase !important; }
+.capitalize { text-transform: capitalize!important; }
+.float-left { float: left!important; display: inline-block; }
+.float-right { float: right!important; display: inline-block; }
+.align-left { text-align: left!important; }
+.align-right { text-align: right!important; }
+.align-center { text-align: center!important; }
+.force-middle { margin: auto!important; float: none!important; display: block!important; }
+.cursor-default { cursor: default; @include noselect(); }
+.cursor-pointer { cursor: pointer; @include noselect(); }
+.noselect { @include noselect(); }
+.nopadding { @include nopadding(); }
+.hidden { display: none!important; }
+
+.typeahead {
+	div, input { margin: 0px!important; padding: 0px!important; }
+	div.icons { padding: 0 1em!important; }
+	ul {
+		li { padding: 15px 20px!important; &.active { background: $magenta; color: white; } }
+	}
+}
+
+.chartist-tooltip { background: $magenta!important; font-family: $def-font-stack!important; font-size: 11px!important; color: white!important; &:before { border-top-color: $magenta!important; } }
+
+$close-size	: 32px;
+div.v--modal {
+	 padding: 25px;
+	 .close-button {
+		 position: absolute; top: -$close-size / 2; right: -$close-size / 2;
+		 width: $close-size; line-height: $close-size; text-align: center;
+		 border-radius: 50%; background: $magenta; color: white;
+	 }
+	 #title { text-align: center; font-size: 20px; font-family: $lato; font-weight: 700; letter-spacing: -1px; text-transform: capitalize; color: $magenta; margin-bottom: 20px; }
+}

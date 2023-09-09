@@ -1,0 +1,20 @@
+/subjects/<subject>
+
+for table:
+if values > 10
+
+tabular_data = make_tabular(values)
+table = convert_code(tabular_data,table)
+table['graph'] = make_graphs(table)
+
+make_summary_stats(tables)
+
+returnset = all the tables
+
+
+Pregnancies 
+
+370000
+
+Indonesia (2016-2018)
+

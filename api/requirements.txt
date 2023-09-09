@@ -1,0 +1,10 @@
+Flask_Cors==3.0.6
+Flask==1.0.2
+pandas==0.23.4
+dateparser==0.7.0
+requests_cache==0.4.13
+requests==2.19.1
+python_dateutil==2.7.5
+parmap
+flask_caching
+apscheduler
